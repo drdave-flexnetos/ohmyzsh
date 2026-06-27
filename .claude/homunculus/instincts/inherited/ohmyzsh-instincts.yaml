@@ -1,0 +1,299 @@
+# Instincts generated from https://github.com/drdave-flexnetos/ohmyzsh
+# Generated: 2026-06-27T12:50:29.114Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: ohmyzsh-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore: apply handoff fleet deployment sync
+
+---
+id: ohmyzsh-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Commit Length
+
+## Action
+
+Keep commit messages concise (~42 characters)
+
+## Evidence
+
+- Average commit message length: 42 chars
+- Based on 1 commits
+
+---
+id: ohmyzsh-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: ohmyzsh-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: ohmyzsh-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: ohmyzsh-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: ohmyzsh-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Instinct File Naming
+
+## Action
+
+Name the file using kebab-case
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: ohmyzsh-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Instinct Function Naming
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: ohmyzsh-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Instinct Class Naming
+
+## Action
+
+Use PascalCase for the class name
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: ohmyzsh-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: ohmyzsh-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: ohmyzsh-instinct-export-style
+trigger: "When exporting from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: ohmyzsh-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Instinct Commit Format
+
+## Action
+
+Start the message with 'chore:' followed by a description
+
+## Evidence
+
+- Seen in commit 'chore: apply handoff fleet deployment sync'
+- Pattern in commits.prefixes
+
+---
+id: ohmyzsh-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Instinct Commit Length
+
+## Action
+
+Keep the commit message around 42 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: ohmyzsh-instinct-test-location
+trigger: "When adding tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: drdave-flexnetos/ohmyzsh
+---
+
+# Ohmyzsh Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
